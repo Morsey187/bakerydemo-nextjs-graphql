@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-export default function Header() {
+const Header = () => {
   const { pathname } = useRouter()
 
   return (
@@ -9,16 +9,11 @@ export default function Header() {
       <Link href="/">
         <a className={pathname === '/' ? 'is-active' : ''}>Home</a>
       </Link>
-      <Link href="/about">
-        <a className={pathname === '/about' ? 'is-active' : ''}>About</a>
+      <Link href="/blog/joy-baking-soda">
+        <a className={pathname === '/blog/joy-baking-soda' ? 'is-active' : ''}>BlogPage</a>
       </Link>
-      <Link href="/client-only">
-        <a className={pathname === '/client-only' ? 'is-active' : ''}>
-          Client-Only
-        </a>
-      </Link>
-      <Link href="/ssr">
-        <a className={pathname === '/ssr' ? 'is-active' : ''}>SSR</a>
+      <Link href="/breads/anpan">
+        <a className={pathname === '/breads/anpan' ? 'is-active' : ''}>BreadPage</a>
       </Link>
       <style jsx>{`
         header {
@@ -36,3 +31,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header;

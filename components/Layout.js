@@ -1,4 +1,4 @@
-export default function App({ children }) {
+const Layout = ({ children }) => {
   return (
     <main>
       {children}
@@ -45,3 +45,5 @@ export default function App({ children }) {
     </main>
   )
 }
+
+export default Layout;

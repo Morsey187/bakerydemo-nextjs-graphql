@@ -1,12 +1,11 @@
-import { ApolloProvider } from '@apollo/client'
-import { useApollo } from '../lib/apolloClient'
+import Layout from '../components/Layout'
+import Header from '../components/Header'
 
-export default function App({ Component, pageProps }) {
-  const apolloClient = useApollo(pageProps)
+const App = ({ Component, pageProps }) => (
+  <Layout>
+    <Header />
+    <Component {...pageProps} />
+  </Layout>
+)
 
-  return (
-    <ApolloProvider client={apolloClient}>
-      <Component {...pageProps} />
-    </ApolloProvider>
-  )
-}
+export default App;
