@@ -1,4 +1,4 @@
-This repository consits of 3 branches to demonstrate different ways of using Next.js with a headless wagtail site, as well as features such as previewing draft pages and on demand re-validation.
+This repository consists of 3 branches to demonstrate different ways of using Next.js with a headless wagtail site, as well as features such as previewing draft pages and on demand re-validation.
 
 - SSR-nested-dynamic-routing-with-wagtail-grapple
 - SSG-nested-dynamic-routing-with-wagtail-grapple
