@@ -5,5 +5,3 @@ This repository consists of 3 branches to demonstrate different ways of using Ne
 - [SSG-nested-dynamic-routing-with-wagtail-grapple-and-on-demand-revalidation](https://github.com/Morsey187/bakerydemo-nextjs-graphql/tree/SSG-nested-dynamic-routing-with-wagtail-grapple-and-on-demand-revalidation)
 
 If you'd like to run this site locally please set up and run the headless Wagtail CMS first -> https://github.com/Morsey187/bakerydemo.
-
-For more info I've written an article -> https://benmor.se/articles/nested-dynamic-routing-with-nextjs-and-wagtail/.
