@@ -88,7 +88,8 @@ export async function getStaticProps({ params }) {
             `,
             variables: {
                 urlPath,
-            }
+            },
+            fetchPolicy: 'network-only',
         });
 
         if (data.page === null) return { notFound: true };
